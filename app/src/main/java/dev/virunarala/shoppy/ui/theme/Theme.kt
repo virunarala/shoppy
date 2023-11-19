@@ -18,14 +18,17 @@ import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
     primary = Orange,
-    surface = Color.White,
-    onPrimary = Color.White
+    surface = Color.Black,
+    onPrimary = Color.White,
+    surfaceVariant = Color.LightGray
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Orange,
-    surface = Color.Black,
-    onPrimary = Color.White
+    surface = Color.White,
+    onPrimary = Color.White,
+    surfaceVariant = Color.White,
+    background = LightBlue.copy(alpha = 0.1f)
 )
 
 @Composable
@@ -36,11 +39,6 @@ fun ShoppyTheme(
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
-
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
@@ -48,7 +46,7 @@ fun ShoppyTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.primary.toArgb()
+            window.statusBarColor = Amber.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }

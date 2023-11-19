@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Shoppy</string>
+    <string name="misc_category">Other</string>
+    <string name="all_category">All</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add_to_favourites">Add to Favourites</string>
+    <string name="decrease_quantity">Decrease Quantity</string>
+    <string name="increase_quantity">Increase Quantity</string>
+    <string name="favourites">Favourites</string>
+    <string name="categories">Categories</string>
+    <string name="close_categories">Close Categories Dropdown</string>
+    <string name="cart">Cart</string>
+    <string name="go_to_cart">Go to Cart</string>
+    <string name="product_price_per_unit">₹%1$s/Unit</string>
+    <string name="price">₹%1$s</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="go_back">Go Back</string>
+    <string name="checkout">Checkout</string>
+    <string name="checkout_success">Checked out successfully!</string>
+    <string name="cart_empty">Your Cart looks empty. Add some items to Checkout</string>
+    <string name="no_favourites">Add products to Favourites to see them here</string>
 </resources>

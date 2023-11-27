@@ -41,17 +41,20 @@ class CartViewModel @Inject constructor(private val cartDao: CartDao, private va
                     cartProducts
                 } else {
                     productEntities.forEach { product ->
-                        val cartEntity = cartEntities.find { it.id == product.id }!!
-                        cartProducts.add(
-                            CartProduct(
-                                id = product.id,
-                                name = product.name,
-                                icon = product.icon,
-                                price = product.price,
-                                isFavourite = product.isFavourite,
-                                quantity = cartEntity.quantity
+                        val cartEntity = cartEntities.find { it.id == product.id }
+                        cartEntity?.let {
+                            cartProducts.add(
+                                CartProduct(
+                                    id = product.id,
+                                    name = product.name,
+                                    icon = product.icon,
+                                    price = product.price,
+                                    isFavourite = product.isFavourite,
+                                    quantity = cartEntity.quantity
+                                )
                             )
-                        )
+                        }
+
                     }
                     cartProducts
                 }

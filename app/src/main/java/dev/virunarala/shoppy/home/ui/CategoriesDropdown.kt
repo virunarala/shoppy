@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import dev.virunarala.shoppy.R
-import dev.virunarala.shoppy.data.model.CategoryEntity
+import dev.virunarala.shoppy.common.data.model.CategoryEntity
 
 @Composable
 fun CategoriesDropdown(

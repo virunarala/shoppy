@@ -1,8 +1,8 @@
-package dev.virunarala.shoppy.data.model
+package dev.virunarala.shoppy.common.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import dev.virunarala.shoppy.data.db.Constants
+import dev.virunarala.shoppy.common.data.db.Constants
 
 @Entity(tableName = Constants.TABLE_CART)
 data class CartEntity(

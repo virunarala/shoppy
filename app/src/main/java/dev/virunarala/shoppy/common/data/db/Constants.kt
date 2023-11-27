@@ -1,4 +1,4 @@
-package dev.virunarala.shoppy.data.db
+package dev.virunarala.shoppy.common.data.db
 
 object Constants {
     const val DB_NAME = "shop_db"

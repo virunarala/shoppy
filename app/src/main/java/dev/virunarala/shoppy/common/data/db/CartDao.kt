@@ -1,11 +1,11 @@
-package dev.virunarala.shoppy.data.db
+package dev.virunarala.shoppy.common.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
-import dev.virunarala.shoppy.data.model.CartEntity
+import dev.virunarala.shoppy.common.data.model.CartEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

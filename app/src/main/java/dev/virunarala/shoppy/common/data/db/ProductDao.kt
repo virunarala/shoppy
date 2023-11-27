@@ -1,9 +1,9 @@
-package dev.virunarala.shoppy.data.db
+package dev.virunarala.shoppy.common.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import dev.virunarala.shoppy.data.model.ProductEntity
+import dev.virunarala.shoppy.common.data.model.ProductEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

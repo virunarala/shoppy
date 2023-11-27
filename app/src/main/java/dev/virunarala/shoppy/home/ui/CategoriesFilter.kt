@@ -24,7 +24,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import dev.virunarala.shoppy.R
-import dev.virunarala.shoppy.data.model.CategoryEntity
+import dev.virunarala.shoppy.common.data.model.CategoryEntity
 import dev.virunarala.shoppy.ui.theme.Orange
 
 @Composable

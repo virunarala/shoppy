@@ -1,4 +1,4 @@
-package dev.virunarala.shoppy.data.db
+package dev.virunarala.shoppy.common.data.db
 
 import android.content.Context
 import androidx.room.Room

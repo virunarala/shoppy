@@ -1,6 +1,6 @@
 package dev.virunarala.shoppy.home.data.model
 
-import dev.virunarala.shoppy.data.model.CategoryEntity
+import dev.virunarala.shoppy.common.data.model.CategoryEntity
 
 data class Product(
     val id: Long,

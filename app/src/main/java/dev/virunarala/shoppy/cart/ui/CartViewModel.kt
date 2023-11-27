@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dev.virunarala.shoppy.cart.data.model.CartProduct
-import dev.virunarala.shoppy.data.db.CartDao
-import dev.virunarala.shoppy.data.db.ProductDao
+import dev.virunarala.shoppy.common.data.db.CartDao
+import dev.virunarala.shoppy.common.data.db.ProductDao
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

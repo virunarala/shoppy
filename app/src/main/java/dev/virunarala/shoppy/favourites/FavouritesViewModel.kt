@@ -3,8 +3,8 @@ package dev.virunarala.shoppy.favourites
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dev.virunarala.shoppy.data.db.CartDao
-import dev.virunarala.shoppy.data.db.ProductDao
+import dev.virunarala.shoppy.common.data.db.CartDao
+import dev.virunarala.shoppy.common.data.db.ProductDao
 import dev.virunarala.shoppy.home.data.model.Product
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -19,7 +19,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class FavouritesViewModel @Inject constructor(private val productDao: ProductDao,
-                                              private val cartDao: CartDao) : ViewModel() {
+                                              private val cartDao: CartDao
+) : ViewModel() {
 
     companion object {
         private const val TIMEOUT_MILLIS = 5_000L
